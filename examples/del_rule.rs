@@ -28,7 +28,7 @@ async fn del_rule(handle: Handle) -> Result<(), Error> {
     message.attributes = vec![
         rule::RuleAttribute::FwMark(0xab),
         rule::RuleAttribute::Table(route::RouteHeader::RT_TABLE_MAIN as u32),
-        rule::RuleAttribute::Priority(171),
+        rule::RuleAttribute::Priority(78),
     ];
 
     let rule = handle.rule();
