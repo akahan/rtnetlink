@@ -12,7 +12,7 @@ async fn main() -> Result<(), ()> {
     if let Err(e) = del_rule(handle).await {
         eprintln!("{e}");
     } else {
-        println!("Route rule has been added for {dst} and lookup {table_id}")
+        println!("Route rule has been deleted")
     }
     Ok(())
 }
